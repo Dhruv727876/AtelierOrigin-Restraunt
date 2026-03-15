@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import { motion, AnimatePresence } from "framer-motion";
 import checkLottie from "@/data/check-lottie.json";
 import { availableTimes } from "@/data/site";
-import { createReservationAction } from "@/app/actions";
+import { createReservationAction } from "@/lib/actions";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
