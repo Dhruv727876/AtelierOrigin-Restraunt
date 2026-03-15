@@ -5,7 +5,7 @@ const nextConfig = {
     unoptimized: true,
     formats: ['image/avif', 'image/webp'],
   },
-  // basePath: '/atelier-origine', // Uncomment and update if your repo name is different
+  basePath: '/AtelierOrigin-Restraunt',
 };
 
 export default nextConfig;
