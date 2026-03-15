@@ -1,0 +1,44 @@
+{
+  "color": {
+    "bg": "#11100d",
+    "bgSoft": "#1a1814",
+    "surface": "rgba(30,27,23,0.72)",
+    "text": "#f2ede3",
+    "muted": "#b9af9f",
+    "accent": "#d6a66b",
+    "accent2": "#7f948a",
+    "danger": "#bf755d"
+  },
+  "typography": {
+    "display": "Playfair Display",
+    "body": "Manrope",
+    "scale": 1.25,
+    "displayTracking": "-0.02em",
+    "ctaTracking": "0.14em"
+  },
+  "spacing": {
+    "base": 4,
+    "steps": [4, 8, 12, 16, 24, 32, 48, 72, 96]
+  },
+  "radius": {
+    "sm": 18,
+    "md": 28,
+    "lg": 40
+  },
+  "zIndex": {
+    "base": 1,
+    "float": 10,
+    "overlay": 30
+  },
+  "motion": {
+    "micro": 150,
+    "medium": 420,
+    "long": 760,
+    "entranceEase": [0.22, 1, 0.36, 1],
+    "microEase": [0.2, 0.8, 0.2, 1]
+  },
+  "elevation": {
+    "level1": "0 14px 30px rgba(0,0,0,0.26), 0 4px 10px rgba(0,0,0,0.18)",
+    "level2": "0 28px 64px rgba(0,0,0,0.34), 0 10px 26px rgba(0,0,0,0.26)"
+  }
+}
