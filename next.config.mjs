@@ -6,6 +6,9 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
   },
   basePath: '/AtelierOrigin-Restraunt',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: '/AtelierOrigin-Restraunt',
+  },
 };
 
 export default nextConfig;

@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+
 import Image from "next/image";
+import { getAssetPath } from "@/lib/utils";
 
 interface ProgressiveImageProps {
   src: string;
@@ -19,6 +21,7 @@ export function ProgressiveImage({
   sizes = "(max-width: 768px) 100vw, 50vw"
 }: ProgressiveImageProps) {
   const [loaded, setLoaded] = useState(false);
+  const finalSrc = getAssetPath(src);
 
   return (
     <div 
@@ -30,7 +33,7 @@ export function ProgressiveImage({
 
       <Image 
         fill 
-        src={src} 
+        src={finalSrc} 
         alt={alt} 
         sizes={sizes}
         onLoad={() => setLoaded(true)} 

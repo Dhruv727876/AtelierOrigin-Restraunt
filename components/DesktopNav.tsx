@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { navigation } from "@/data/site";
+import { getAssetPath } from "@/lib/utils";
 
 const navImages: Record<string, string> = {
     story: "/images/chef.png",
@@ -80,7 +81,7 @@ export function DesktopNav({ activeSection }: { activeSection: string | null }) 
                         }}
                     >
                         <img
-                            src={navImages[hovered]}
+                            src={getAssetPath(navImages[hovered])}
                             alt=""
                             style={{ width: "100%", height: "100%", objectFit: "cover" }}
                         />

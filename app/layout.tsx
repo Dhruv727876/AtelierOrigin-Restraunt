@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: "/images/hero-main.svg",
+        url: "/AtelierOrigin-Restraunt/images/hero-main.svg",
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} dining room`
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.metadata.title,
     description: siteConfig.metadata.description,
-    images: ["/images/hero-main.svg"]
+    images: ["/AtelierOrigin-Restraunt/images/hero-main.svg"]
   }
 };
 
@@ -48,7 +48,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Restaurant",
   name: siteConfig.name,
-  image: "https://atelierorigine.com/images/hero-main.svg",
+  image: "https://dhruv727876.github.io/AtelierOrigin-Restraunt/images/hero-main.svg",
   "@id": "https://atelierorigine.com",
   url: "https://atelierorigine.com",
   telephone: siteConfig.phone,
