@@ -3,8 +3,7 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { navigation } from "@/data/site";
-import { siteConfig } from "@/config/site";
+import { navigation, siteConfig } from "@/data/site";
 
 export function MobileNavToggle({ isOpen, onClick }: { isOpen: boolean; onClick: () => void }) {
     return (
@@ -147,14 +146,14 @@ export function MobileNavOverlay({ isOpen, onClose }: { isOpen: boolean; onClose
                         >
                             <div style={{ marginBottom: '1rem' }}>
                                 <p style={{ opacity: 0.35, fontSize: '0.55rem', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '0.3rem' }}>Location</p>
-                                <p style={{ fontSize: '0.75rem', opacity: 0.85 }}>{siteConfig.contact.address}</p>
+                                <p style={{ fontSize: '0.75rem', opacity: 0.85 }}>{siteConfig.address}</p>
                             </div>
                             <div>
                                 <p style={{ opacity: 0.35, fontSize: '0.55rem', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '0.3rem' }}>Reservations</p>
                                 <p style={{ fontSize: '0.75rem' }}>
-                                    <a href={`mailto:${siteConfig.contact.email}`} style={{ color: 'var(--accent)', opacity: 0.9 }}>{siteConfig.contact.email}</a>
+                                    <a href={`mailto:${siteConfig.email}`} style={{ color: 'var(--accent)', opacity: 0.9 }}>{siteConfig.email}</a>
                                     <br />
-                                    <span style={{ display: 'block', marginTop: '0.3rem', opacity: 0.85 }}>{siteConfig.contact.phone}</span>
+                                    <span style={{ display: 'block', marginTop: '0.3rem', opacity: 0.85 }}>{siteConfig.phone}</span>
                                 </p>
                             </div>
                         </motion.div>
